@@ -100,9 +100,13 @@ ul { margin: 0 0 1em; padding-left: 1.15em; }
 .nut--chinh { background: var(--do); color: #fff; box-shadow: var(--bong-do); }
 .nut--chinh:hover { background: var(--do-dam); }
 .nut--vien { background: transparent; color: var(--muc); border-color: var(--xam); }
-.nut--vien:hover { border-color: var(--muc); }
-.section--toi .nut--vien { color: #fff; border-color: rgba(255,255,255,.45); }
-.section--toi .nut--vien:hover { border-color: #fff; }
+.nut--vien:hover { border-color: var(--muc); background: var(--nen-phu); }
+.section--toi .nut--vien, .hero .nut--vien {
+  color: #fff; border-color: rgba(255,255,255,.55); background: rgba(255,255,255,.06);
+}
+.section--toi .nut--vien:hover, .hero .nut--vien:hover {
+  border-color: #fff; background: rgba(255,255,255,.14);
+}
 .nut--lon { padding: 18px 38px; font-size: 18px; }
 .nut--rong { width: 100%; }
 
