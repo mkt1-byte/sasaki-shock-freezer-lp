@@ -5,7 +5,7 @@
  *
  * CÁCH CÀI (làm 1 lần, khoảng 10 phút):
  *
- *  1. Tạo Google Sheet mới, đặt tên: "SASAKI Shock Freezer — Lead 2026"
+ *  1. Tạo Google Sheet mới, đặt tên: "SASAKI Shock Freezer - Lead 2026"
  *  2. Trong Sheet: menu Tiện ích mở rộng → Apps Script
  *  3. Xóa hết code mẫu, dán toàn bộ file này vào
  *  4. Sửa 3 hằng số ở khối CAU_HINH bên dưới (email Sales, tên sheet)
@@ -142,7 +142,7 @@ function doPost(e) {
 
 function doGet() {
   return ContentService
-    .createTextOutput('SASAKI Shock Freezer — endpoint nhận lead đang hoạt động.')
+    .createTextOutput('Endpoint nhận lead của SASAKI Shock Freezer đang hoạt động.')
     .setMimeType(ContentService.MimeType.TEXT);
 }
 
@@ -158,9 +158,9 @@ function guiEmail_(d, kenh, thoiGian) {
 
   var mau = { QL: '#1E7B34', CHUA_DU: '#9A6B12', LOAI: '#B0182F' };
   var chuThich = {
-    QL: 'ĐẠT QUALIFIED LEAD — đủ cả 5 tiêu chí',
-    CHUA_DU: 'CHƯA ĐỦ — thiếu tiêu chí, cần gọi xác minh thêm',
-    LOAI: 'KHÔNG TÍNH — không phải doanh nghiệp / cơ sở sản xuất'
+    QL: 'ĐẠT QUALIFIED LEAD (đủ cả 5 tiêu chí)',
+    CHUA_DU: 'CHƯA ĐỦ (thiếu tiêu chí, cần gọi xác minh thêm)',
+    LOAI: 'KHÔNG TÍNH (không phải doanh nghiệp / cơ sở sản xuất)'
   };
   var nhan = d.nhan_ql || 'CHUA_DU';
 
@@ -207,7 +207,7 @@ function guiEmail_(d, kenh, thoiGian) {
       '</table>' +
       '<p style="font-size:13px;color:#5C5C5C;margin-top:14px">' +
         'Nhãn do landing page chấm tự động theo 5 tiêu chí trong sheet “Đối tác &amp; Lead”. ' +
-        'Sales có quyền chỉnh lại sau khi gọi — nhớ cập nhật cột “Trạng thái xử lý” trong Google Sheet.' +
+        'Sales có quyền chỉnh lại sau khi gọi. Nhớ cập nhật cột “Trạng thái xử lý” trong Google Sheet.' +
       '</p>' +
     '</div>';
 
@@ -225,7 +225,7 @@ function guiZalo_(d, kenh) {
   try {
     var noiDung =
       '[' + (d.nhan_ql || '') + '] Lead mới\n' +
-      (d.don_vi || '') + ' — ' + (d.ho_ten || '') + '\n' +
+      (d.don_vi || '') + ' - ' + (d.ho_ten || '') + '\n' +
       'SĐT: ' + (d.so_dien_thoai || '') + '\n' +
       (d.san_pham || '') + ' · ' + (d.san_luong || '') + '\n' +
       'Kênh: ' + kenh;
@@ -257,10 +257,10 @@ function chayThu() {
         don_vi: 'Chuỗi cơm hộp ABC',
         vai_tro: 'Chủ doanh nghiệp / Giám đốc',
         san_pham: 'Thực phẩm chế biến',
-        san_luong: '200 – 500 kg/ngày',
+        san_luong: '200-500 kg/ngày',
         loai_hinh: 'Chuỗi F&B / bếp trung tâm / nhà hàng',
         kho_dong: 'Đã có kho đông',
-        thoi_diem: 'Trong 1 – 3 tháng tới',
+        thoi_diem: 'Trong 1-3 tháng tới',
         nhan_ql: 'QL', diem_ql: '5/5', uu_tien: 'Nong',
         utm_source: 'facebook', utm_campaign: 'cp2-fnb', fbclid: 'test123',
         nganh_bien_the: 'fnb',

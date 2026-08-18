@@ -138,7 +138,7 @@ ul { margin: 0 0 1em; padding-left: 1.15em; }
   pointer-events: none;
 }
 .hero__in { position: relative; z-index: 2; display: grid; grid-template-columns: 1.08fr .92fr; gap: 52px; align-items: center; }
-.hero h1 { color: #fff; margin-bottom: 20px; }
+.hero h1 { color: #fff; margin-bottom: 20px; text-transform: uppercase; letter-spacing: -.01em; }
 .hero h1 em { font-style: normal; color: var(--vang); }
 .hero__sub { font-size: 19px; color: rgba(255,255,255,.84); max-width: 560px; }
 .hero__cta { display: flex; flex-wrap: wrap; gap: 14px; margin: 30px 0 26px; }

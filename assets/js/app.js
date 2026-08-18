@@ -149,19 +149,19 @@
     'fnb': {
       nhan: 'Dành cho chuỗi F&B và bếp trung tâm',
       tieuDe: 'Nấu hôm nay,<br><em>phục vụ tuần sau</em>',
-      moTa: 'Món chế biến chín sau khi cấp đông sâu và hoàn nhiệt đúng cách vẫn giữ được độ ngọt, mùi thơm và cấu trúc. Bếp trung tâm nấu tập trung một lần, phân phối nhiều ngày — vị đồng nhất trên toàn chuỗi.',
+      moTa: 'Món chế biến chín sau khi cấp đông sâu và hoàn nhiệt đúng cách vẫn giữ được độ ngọt, mùi thơm và cấu trúc. Bếp trung tâm nấu tập trung một lần, phân phối nhiều ngày, vị đồng nhất trên toàn chuỗi.',
       tab: 'fnb'
     },
     'thuy-san': {
       nhan: 'Dành cho thủy sản, thịt và nông sản giá trị cao',
       tieuDe: 'Giữ trọng lượng,<br><em>giữ phẩm cấp xuất khẩu</em>',
-      moTa: 'Hạ tâm tới <b>−40°C</b> đáp ứng yêu cầu siêu đông cho sashimi và hàng xuất khẩu. Hạn chế dịch chảy khi rã đông đồng nghĩa giữ được khối lượng bán ra — và giữ màu, giữ độ săn chắc.',
+      moTa: 'Hạ tâm tới <b>−40°C</b> đáp ứng yêu cầu siêu đông cho sashimi và hàng xuất khẩu. Hạn chế dịch chảy khi rã đông đồng nghĩa giữ được khối lượng bán ra, và giữ màu, giữ độ săn chắc.',
       tab: 'thuy-san'
     },
     'rmk': {
       nhan: 'Test mẫu miễn phí trên chính sản phẩm của bạn',
       tieuDe: 'Đừng quyết định<br><em>bằng catalogue</em>',
-      moTa: 'Mỗi loại thực phẩm cần một quy trình cấp đông khác nhau. Cách duy nhất để biết máy hợp với sản phẩm của bạn là <b>test thật</b> — có đo chỉ tiêu, có báo cáo, trước khi bàn tới cấu hình và giá.',
+      moTa: 'Mỗi loại thực phẩm cần một quy trình cấp đông khác nhau. Cách duy nhất để biết máy hợp với sản phẩm của bạn là <b>test thật</b>: có đo chỉ tiêu, có báo cáo, trước khi bàn tới cấu hình và giá.',
       tab: 'nha-may'
     }
   };
@@ -209,7 +209,7 @@
 
   function goiYCongSuat(kgNgay) {
     // Giả định thận trọng: ~6 mẻ dùng được mỗi ngày (mỗi mẻ ~1 giờ + ra/vào hàng)
-    if (kgNgay <= 0) return '—';
+    if (kgNgay <= 0) return '···';
     if (kgNgay <= 300) return 'Dòng 50 kg/mẻ';
     if (kgNgay <= 600) return 'Dòng 100 kg/mẻ';
     if (kgNgay <= 1200) return 'Dòng 200 kg/mẻ';
@@ -382,8 +382,8 @@
       // Độ ưu tiên gọi — tách khỏi định nghĩa QL, chỉ để Sales xếp thứ tự
       var uuTien = 'Nguoi';
       if (thoiDiem === 'Trong tháng này') uuTien = 'Nong';
-      else if (thoiDiem === 'Trong 1 – 3 tháng tới') uuTien = 'Nong';
-      else if (thoiDiem === 'Trong 3 – 6 tháng tới') uuTien = 'Am';
+      else if (thoiDiem === 'Trong 1-3 tháng tới') uuTien = 'Nong';
+      else if (thoiDiem === 'Trong 3-6 tháng tới') uuTien = 'Am';
 
       return { diem: diem, nhan: nhan, uu_tien: uuTien, chi_tiet: ct, vai_tro: vaiTro };
     }
