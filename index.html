@@ -226,57 +226,22 @@
       </p>
     </div>
 
-    <!-- Đồ họa tự vẽ: so sánh tinh thể đá -->
-    <svg viewBox="0 0 900 300" role="img" aria-label="So sánh tinh thể đá: cấp đông chậm tạo tinh thể lớn trên 100 micromet xé rách màng tế bào; cấp đông sâu siêu tốc tạo tinh thể nhỏ dưới 50 micromet phân bố đều" style="width:100%;height:auto;margin-bottom:44px">
-      <defs>
-        <clipPath id="cat-trai"><rect x="40" y="60" width="360" height="180" rx="14"/></clipPath>
-        <clipPath id="cat-phai"><rect x="500" y="60" width="360" height="180" rx="14"/></clipPath>
-      </defs>
-
-      <!-- Trái: đông chậm -->
-      <text x="220" y="38" text-anchor="middle" fill="#F3C9CF" font-size="17" font-weight="700" font-family="system-ui">CẤP ĐÔNG CHẬM</text>
-      <rect x="40" y="60" width="360" height="180" rx="14" fill="rgba(198,32,59,.13)" stroke="#C6203B" stroke-width="2"/>
-      <g clip-path="url(#cat-trai)">
-        <g fill="rgba(255,255,255,.30)" stroke="#fff" stroke-width="1.2">
-          <polygon points="110,105 155,95 175,135 140,165 100,145"/>
-          <polygon points="230,90 285,100 295,145 245,170 210,135"/>
-          <polygon points="330,115 375,130 360,180 310,175 300,140"/>
-          <polygon points="120,190 170,185 185,225 140,240 105,215"/>
-          <polygon points="245,195 300,205 290,245 240,245 225,220"/>
-        </g>
-      </g>
-      <text x="220" y="266" text-anchor="middle" fill="#fff" font-size="15" font-weight="700" font-family="system-ui">Tinh thể lớn &gt; 100 µm</text>
-      <text x="220" y="288" text-anchor="middle" fill="rgba(255,255,255,.62)" font-size="13.5" font-family="system-ui">Xé rách màng tế bào → chảy dịch khi rã đông</text>
-
-      <!-- Mũi tên -->
-      <g transform="translate(450,150)">
-        <circle r="26" fill="rgba(184,137,59,.2)" stroke="#B8893B" stroke-width="1.5"/>
-        <path d="M-9,0 L7,0 M1,-6 L7,0 L1,6" stroke="#B8893B" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-      </g>
-
-      <!-- Phải: đông sâu siêu tốc -->
-      <text x="680" y="38" text-anchor="middle" fill="#B8893B" font-size="17" font-weight="700" font-family="system-ui">CẤP ĐÔNG SÂU SIÊU TỐC −65°C</text>
-      <rect x="500" y="60" width="360" height="180" rx="14" fill="rgba(70,150,255,.14)" stroke="#5B9BE0" stroke-width="2"/>
-      <g clip-path="url(#cat-phai)">
-        <g fill="rgba(255,255,255,.42)">
-          <!-- lưới tinh thể nhỏ đều -->
-          <g id="hat">
-            <circle cx="525" cy="85"  r="5"/><circle cx="560" cy="85"  r="5"/><circle cx="595" cy="85"  r="5"/><circle cx="630" cy="85"  r="5"/>
-            <circle cx="665" cy="85"  r="5"/><circle cx="700" cy="85"  r="5"/><circle cx="735" cy="85"  r="5"/><circle cx="770" cy="85"  r="5"/><circle cx="805" cy="85" r="5"/><circle cx="840" cy="85" r="5"/>
-            <circle cx="542" cy="120" r="5"/><circle cx="577" cy="120" r="5"/><circle cx="612" cy="120" r="5"/><circle cx="647" cy="120" r="5"/>
-            <circle cx="682" cy="120" r="5"/><circle cx="717" cy="120" r="5"/><circle cx="752" cy="120" r="5"/><circle cx="787" cy="120" r="5"/><circle cx="822" cy="120" r="5"/>
-            <circle cx="525" cy="155" r="5"/><circle cx="560" cy="155" r="5"/><circle cx="595" cy="155" r="5"/><circle cx="630" cy="155" r="5"/>
-            <circle cx="665" cy="155" r="5"/><circle cx="700" cy="155" r="5"/><circle cx="735" cy="155" r="5"/><circle cx="770" cy="155" r="5"/><circle cx="805" cy="155" r="5"/><circle cx="840" cy="155" r="5"/>
-            <circle cx="542" cy="190" r="5"/><circle cx="577" cy="190" r="5"/><circle cx="612" cy="190" r="5"/><circle cx="647" cy="190" r="5"/>
-            <circle cx="682" cy="190" r="5"/><circle cx="717" cy="190" r="5"/><circle cx="752" cy="190" r="5"/><circle cx="787" cy="190" r="5"/><circle cx="822" cy="190" r="5"/>
-            <circle cx="525" cy="225" r="5"/><circle cx="560" cy="225" r="5"/><circle cx="595" cy="225" r="5"/><circle cx="630" cy="225" r="5"/>
-            <circle cx="665" cy="225" r="5"/><circle cx="700" cy="225" r="5"/><circle cx="735" cy="225" r="5"/><circle cx="770" cy="225" r="5"/><circle cx="805" cy="225" r="5"/><circle cx="840" cy="225" r="5"/>
-          </g>
-        </g>
-      </g>
-      <text x="680" y="266" text-anchor="middle" fill="#fff" font-size="15" font-weight="700" font-family="system-ui">Tinh thể nhỏ &lt; 50 µm, phân bố đều</text>
-      <text x="680" y="288" text-anchor="middle" fill="rgba(255,255,255,.62)" font-size="13.5" font-family="system-ui">Ít gây tổn thương tế bào → hạn chế thất thoát dịch bào</text>
-    </svg>
+    <!-- So sánh tinh thể đá: cấp đông chậm vs cấp đông sâu siêu tốc -->
+    <div class="doi-chieu-anh">
+      <figure>
+        <img src="assets/img/co-che-cap-dong-cham.jpg"
+             alt="Cấp đông chậm: tinh thể băng lớn trên 100 micromet xé rách màng tế bào, làm dịch bào thoát ra khi rã đông"
+             width="900" height="900" loading="lazy">
+      </figure>
+      <div class="doi-chieu-mui-ten" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </div>
+      <figure>
+        <img src="assets/img/co-che-cap-dong-sieu-toc.jpg"
+             alt="Cấp đông sâu siêu tốc SASAKI ở −65°C: tinh thể băng nhỏ dưới 50 micromet, phân bố đều, màng tế bào gần như nguyên vẹn"
+             width="900" height="900" loading="lazy">
+      </figure>
+    </div>
 
     <div class="luoi luoi-3">
       <div class="the">
@@ -452,7 +417,7 @@
             <span>Chả giò, nem</span><span>Bột nhào, bánh</span><span>Hải sản tẩm bột</span>
           </div>
         </div>
-        <div><img src="assets/img/thuc-pham-dong-da.jpg" alt="Nhiều nhóm thực phẩm được cấp đông sâu: thịt bò, tôm, cá hồi, rau củ, trái cây" loading="lazy" style="border-radius:14px"></div>
+        <div><img src="assets/img/tab-nha-may.jpg" alt="Thịt bò, cá hồi và tôm sú vừa cấp đông sâu, phủ tuyết mịn, tại nhà máy chế biến thực phẩm SASAKI" loading="lazy" style="border-radius:14px"></div>
       </div>
     </div>
 
@@ -467,7 +432,7 @@
             <span>Bún, phở, cháo</span><span>Sushi, sashimi</span><span>Buffet cao cấp</span>
           </div>
         </div>
-        <div><img src="assets/img/nen-tuyet.jpg" alt="Minh họa môi trường cấp đông sâu" loading="lazy" style="border-radius:14px"></div>
+        <div><img src="assets/img/tab-fnb.jpg" alt="Bò bít tết áp chảo được sơ chế từ nguyên liệu cấp đông sâu, phục vụ trong bếp trung tâm" loading="lazy" style="border-radius:14px"></div>
       </div>
     </div>
 
@@ -482,7 +447,7 @@
             <span>Thịt bò, Wagyu, gia cầm</span><span>Sầu riêng, vải, xoài</span><span>Dâu tây, việt quất</span>
           </div>
         </div>
-        <div><img src="assets/img/hero-thit-bo-dong-da.jpg" alt="Thịt bò cấp đông sâu trong khối băng" loading="lazy" style="border-radius:14px"></div>
+        <div><img src="assets/img/tab-thuy-san.jpg" alt="Đĩa sashimi tôm hùm, cá ngừ, cá hồi và sò điệp cấp đông sâu, giữ màu và độ tươi cho phân khúc xuất khẩu" loading="lazy" style="border-radius:14px"></div>
       </div>
     </div>
 
