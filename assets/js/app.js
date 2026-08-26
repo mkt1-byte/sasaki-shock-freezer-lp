@@ -137,6 +137,56 @@
   var NGUON = layNguon();
 
   /* ============================================================
+     2b. VIDEO 16:9 Ở ĐẦU TRANG
+     Chỉ tải iframe YouTube khi khách bấm phát. Nếu nhúng sẵn iframe
+     ngay từ đầu, YouTube kéo theo hơn 1MB script làm chậm hẳn tốc độ
+     hiển thị của trang — trong khi phần lớn khách không bấm xem.
+     ============================================================ */
+  (function () {
+    var khung = $('.hero__anh');
+    var nut = $('#nut-phat-video');
+    if (!khung || !nut) return;
+
+    // Lấy ID video từ link YouTube ở nhiều dạng khác nhau
+    function layIdYouTube(link) {
+      var s = String(link || '').trim();
+      if (!s) return '';
+      // Có dấu ./:/ nghĩa là đang dán một đường dẫn — bắt buộc phải khớp đúng
+      // dạng link YouTube. Không nhận bừa, tránh việc dán nhầm link Vimeo hay
+      // Google Drive rồi trang lặng lẽ nhúng một video hỏng.
+      if (/[.\/:]/.test(s)) {
+        var m = s.match(/(?:youtu\.be\/|[?&]v=|\/embed\/|\/shorts\/|\/live\/)([\w-]{11})(?![\w-])/);
+        return m ? m[1] : '';
+      }
+      // Không phải đường dẫn thì chấp nhận nếu đúng khuôn mã video 11 ký tự
+      return /^[\w-]{11}$/.test(s) ? s : '';
+    }
+
+    var id = layIdYouTube(CF.VIDEO_HERO);
+    if (!id) return;   // chưa cấu hình video thì giữ nguyên ảnh nền
+
+    nut.removeAttribute('hidden');
+
+    nut.addEventListener('click', function () {
+      var iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube-nocookie.com/embed/' + id +
+                   '?autoplay=1&rel=0&modestbranding=1&playsinline=1';
+      iframe.title = 'Video giới thiệu SASAKI Shock Freezer';
+      iframe.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+
+      var anh = khung.querySelector('img');
+      var nhiet = khung.querySelector('.hero__nhiet');
+      if (anh) anh.remove();
+      if (nhiet) nhiet.remove();
+      nut.remove();
+      khung.appendChild(iframe);
+
+      banSuKien('phat_video_hero', { video_id: id });
+    });
+  })();
+
+  /* ============================================================
      3. BIẾN THỂ THEO NGÀNH (?nganh=)  — message-match 4 campaign
      ============================================================ */
   var BIEN_THE = {

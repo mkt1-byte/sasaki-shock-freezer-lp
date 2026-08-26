@@ -144,8 +144,44 @@ ul { margin: 0 0 1em; padding-left: 1.15em; }
 .hero__cta { display: flex; flex-wrap: wrap; gap: 14px; margin: 30px 0 26px; }
 .hero__ghi-chu { font-size: 14.5px; color: rgba(255,255,255,.62); }
 
-.hero__anh { position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 24px 60px rgba(0,0,0,.45); }
-.hero__anh img { width: 100%; aspect-ratio: 4/3.1; object-fit: cover; }
+/* Khung video 16:9 — nhúng video khi có, trước đó hiển thị ảnh nền */
+.hero__anh {
+  position: relative; border-radius: 20px; overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0,0,0,.45);
+  aspect-ratio: 16 / 9; background: #071B33;
+}
+.hero__anh img {
+  width: 100%; height: 100%; display: block;
+  object-fit: cover;
+  /* Ảnh gốc dạng dọc — kéo điểm nhìn lên trên một chút để không cắt mất chủ thể.
+     Khi thay bằng ảnh 16:9 thật thì đổi lại thành 'center'. */
+  object-position: center 42%;
+}
+.hero__anh iframe {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; border: 0; display: block;
+}
+
+/* Nút phát — chỉ hiện khi đã cấu hình VIDEO_HERO */
+.hero__phat {
+  position: absolute; inset: 0; margin: auto;
+  width: 76px; height: 76px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: rgba(198, 32, 59, .94); color: #fff;
+  border: 0; cursor: pointer; padding: 0;
+  box-shadow: 0 10px 34px rgba(0,0,0,.5);
+  transition: transform .18s ease, background .18s ease;
+}
+.hero__phat:hover { transform: scale(1.08); background: var(--do); }
+.hero__phat:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+.hero__phat svg { margin-left: 5px; }
+/* Làm tối nhẹ ảnh nền để nút phát nổi lên */
+.hero__anh:has(.hero__phat:not([hidden]))::before {
+  content: ''; position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(180deg, rgba(7,27,51,.28), rgba(7,27,51,.48));
+  pointer-events: none;
+}
+.hero__phat, .hero__nhiet { z-index: 2; }
 .hero__nhiet {
   position: absolute; left: 18px; bottom: 18px;
   background: rgba(7,27,51,.86); backdrop-filter: blur(6px);

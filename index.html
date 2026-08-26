@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=5">
+<link rel="stylesheet" href="assets/css/style.css?v=6">
 
 <!-- ============================================================
      TRACKING — thay ID thật trước khi bật quảng cáo 25/8
@@ -33,6 +33,10 @@
     FORM_ENDPOINT: '',
     HOTLINE: '0968723079',
     ZALO: 'https://zalo.me/0968723079',
+    // Video 16:9 ở đầu trang. Dán link YouTube vào đây, dạng nào cũng được:
+    //   'https://www.youtube.com/watch?v=XXXXXXXXXXX'  hoặc  'https://youtu.be/XXXXXXXXXXX'
+    // Để trống thì chỉ hiển thị ảnh nền, không hiện nút phát.
+    VIDEO_HERO: '',
     GA4_ID: '',          // vd 'G-XXXXXXXXXX'
     FB_PIXEL_ID: '',     // vd '123456789012345'
     GADS_ID: '',         // vd 'AW-XXXXXXXXX'
@@ -153,11 +157,19 @@
     </div>
 
     <div>
-      <!-- Ô video: thay bằng V4 (VTV3) khi dựng xong 18/8 -->
+      <!-- Khung video 16:9.
+           Dán link YouTube vào VIDEO_HERO trong window.SASAKI_CONFIG ở đầu file.
+           Chưa có link thì hiển thị ảnh nền, không hiện nút phát. -->
       <div class="hero__anh" data-video-slot="V4">
         <img src="assets/img/hero-thit-bo-dong-da.jpg"
              alt="Miếng thịt bò được cấp đông sâu trong khối băng, minh họa công nghệ Deep Cell Freezing của SASAKI"
-             width="920" height="713" fetchpriority="high">
+             width="1280" height="720" fetchpriority="high">
+        <button type="button" class="hero__phat" id="nut-phat-video" hidden
+                aria-label="Phát video giới thiệu SASAKI Shock Freezer">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M8 5.14v13.72a1 1 0 0 0 1.54.84l10.8-6.86a1 1 0 0 0 0-1.68L9.54 4.3A1 1 0 0 0 8 5.14z"/>
+          </svg>
+        </button>
         <div class="hero__nhiet">
           <b>−65°C</b>
           <span>nhiệt độ buồng cấp đông</span>
@@ -884,6 +896,6 @@
   <a href="#dang-ky" class="nut nut--chinh" data-su-kien="cta_sticky">Test mẫu</a>
 </div>
 
-<script src="assets/js/app.js?v=5"></script>
+<script src="assets/js/app.js?v=6"></script>
 </body>
 </html>
