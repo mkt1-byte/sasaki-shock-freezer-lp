@@ -365,6 +365,39 @@ table.bang .cot-nhan { font-weight: 700; }
 .faq__tra-loi { padding: 19px 22px; color: var(--xam-dam); }
 .faq__tra-loi p:last-child { margin-bottom: 0; }
 
+/* ---------- Lưới ảnh test sản phẩm ---------- */
+.chu-thich-test {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 26px;
+  margin: 0 0 26px; font-size: 15px; color: var(--xam-dam);
+}
+.chu-thich-test span { display: inline-flex; align-items: center; gap: 8px; }
+.cham {
+  width: 11px; height: 11px; border-radius: 50%; flex: none;
+  border: 1.5px solid var(--xam);
+}
+.cham--dong { background: #DCE9F5; border-color: #9BBFDD; }
+.cham--ra   { background: var(--do); border-color: var(--do-dam); }
+
+.luoi-test { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.luoi-test figure {
+  margin: 0; background: #fff; border: 1px solid var(--xam-nhat);
+  border-radius: var(--bo-goc); overflow: hidden; box-shadow: var(--bong);
+}
+.luoi-test img {
+  width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block;
+}
+.luoi-test figcaption {
+  padding: 13px 16px; font-weight: 700; font-size: 16px; text-align: center;
+}
+
+@media (max-width: 900px) {
+  .luoi-test { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+}
+@media (max-width: 560px) {
+  .luoi-test { grid-template-columns: 1fr; }
+  .chu-thich-test { flex-direction: column; align-items: center; gap: 8px; }
+}
+
 /* ---------- Ô chờ case study ---------- */
 .o-cho {
   border: 2px dashed var(--xam); border-radius: var(--bo-goc);

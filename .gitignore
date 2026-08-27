@@ -1,2 +1,7 @@
 # Gói tải về gốc từ Drive/Zip — không cần cho trang chạy
 assets/img/*.zip
+
+# Ảnh gốc chưa nén (mỗi file vài MB). Trang chỉ dùng bản .jpg đã nén,
+# giữ bản gốc trên máy để sau này xuất lại, không đẩy lên git.
+assets/img/ảnh hồ sơ test mẫu trên máy cấp đông siêu tốc/
+assets/img/Thiết kế chưa có tên*.png
