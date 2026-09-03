@@ -116,7 +116,7 @@ Gợi ý công suất cũng ghi là **sơ bộ** — Q&A #30 nói rủi ro đầ
 | **Số năm** | ✅ Chốt **26 năm** (20/8) | Đã đồng bộ toàn trang: hero, mục Vì sao, FAQ câu 6, ảnh dấu ấn. Ảnh `thanh-tich-26-nam.jpg` giờ khớp 26/26, không còn mâu thuẫn như bản cũ. |
 | **Khách hàng Nhật Bản** | ✅ BLĐ xác nhận (20/8) | Dùng trong FAQ câu 6. **Nên lưu văn bản xác nhận** phòng khi bị hỏi bằng chứng. |
 | **Số hao hụt** | ✅ Đã gỡ (26/8) | Xem mục 3b. Chờ hồ sơ test thật mới đưa lại. |
-| **Hotline** | ⚠️ **Còn treo** | Trang dùng `0968 723 079` (theo Playbook). Brand Guideline slide 13 ghi chưa rõ giữa số này và `0868 560 268 (CSKH)`. Số này lên header, footer, thanh dính mobile, schema và trang cảm ơn — sửa 1 chỗ trong `SASAKI_CONFIG` là áp cả trang. |
+| **Hotline** | ✅ Chốt **0968 723 079** (3/9) | Giữ nguyên số của Playbook, không dùng `0868 560 268 (CSKH)`. Đã nhất quán ở header, footer, thanh dính mobile, schema và trang cảm ơn — không cần sửa gì thêm. |
 
 Gap List còn ghi *"Danh sách giải thưởng & chứng nhận chính thức kèm năm trao"* là chưa xác nhận. Phần chữ trên trang chỉ dùng 4 chứng nhận trong Reasons to Believe đã duyệt (slide 11): **26 năm XK Nhật · ISO 9001 & 14001 · Top 10 ESG Việt Nam · Thương hiệu mạnh ASEAN 2020**.
 

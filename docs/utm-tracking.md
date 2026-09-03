@@ -14,7 +14,7 @@
 | 3 | Cấp Facebook Pixel ID | Thời | Điền `FB_PIXEL_ID` |
 | 4 | Cấp Google Ads Conversion ID + Label | Thời | Điền `GADS_ID`, `GADS_LABEL` |
 | 5 | Cấp TikTok Pixel ID | Thời | Điền `TIKTOK_ID` |
-| 6 | Chốt hotline chuẩn (0968 hay 0868) | BLĐ | Điền `HOTLINE`, `ZALO` |
+| ~~6~~ | ~~Chốt hotline chuẩn~~ | ~~BLĐ~~ | ✅ Đã chốt `0968 723 079` (3/9) |
 
 Tất cả nằm **cùng một chỗ** — khối `window.SASAKI_CONFIG` ở đầu `index.html` và `cam-on.html`. Sửa 1 lần, áp cả trang.
 
