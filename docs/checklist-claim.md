@@ -31,12 +31,12 @@ Brand Guideline cũng ghi: *"Khác biệt được trình bày theo hướng gi�
 
 | Số | Ở đâu | Nguồn | Trạng thái |
 |---|---|---|---|
-| Buồng −65°C, tâm −40°C | Hero, FAQ, thông số | Playbook Ch.8, Q&A #2 | ✅ Hồ sơ kỹ thuật |
+| Buồng −65°C, tâm đạt −40°C trong ~1 giờ | Hero, FAQ, bảng so sánh | Playbook Ch.8, Q&A #2 + xác nhận 3/9 | ✅ Đã sửa (3/9): tâm KHÔNG dừng ở −40°C, tiếp tục hạ sâu hơn theo thời gian, có thể tới gần −65°C. −40°C là mốc đạt sau ~1 giờ, không phải giới hạn cuối. |
 | ~~Hao hụt 8–12% vs 3–5%~~ | — | Q&A #1, #12, #39 | 🚫 **ĐÃ GỠ KHỎI TRANG** (xem mục 3b) |
 | ~~Giữ thêm 50–70 kg/tấn~~ | — | Q&A #39 | 🚫 **ĐÃ GỠ KHỎI TRANG** |
 | Điện 0,6–1,2 kWh/kg | FAQ | Q&A #31, #32 | ✅ Dải kỹ thuật |
 | Hoàn vốn 12–24 tháng | FAQ | Q&A #23 | ✅ Có ghi "phụ thuộc sản lượng, biên lợi nhuận" |
-| 15–30 phút / ~60 phút đạt tâm −40°C | FAQ | Nội dung BLĐ duyệt | ✅ Có ghi rõ "tùy sản phẩm, kích thước, nhiệt độ đầu vào" |
+| 15–30 phút / ~60 phút đạt tâm −40°C, tiếp tục hạ sâu hơn sau đó | FAQ | Nội dung BLĐ duyệt + xác nhận 3/9 | ✅ Có ghi rõ "tùy sản phẩm, kích thước, nhiệt độ đầu vào" và rõ đây là mốc thời gian, không phải giới hạn cuối của tâm |
 | Tinh thể <50 µm vs >100 µm | Đồ họa Deep Cell | Ảnh do SASAKI thiết kế | ✅ Nguyên lý khoa học, ảnh nội bộ duyệt |
 | Tuổi thọ trên 10 năm | (chưa dùng trên trang) | Q&A #28 | — |
 | 26 năm XK Nhật, ISO 9001/14001, Top 10 ESG, ASEAN 2020 | Hero, section Vì sao | Brand Guideline slide 1 & 11 | ✅ RTB đã duyệt |

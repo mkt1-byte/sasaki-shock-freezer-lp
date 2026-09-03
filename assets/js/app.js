@@ -193,7 +193,7 @@
     'nha-may': {
       nhan: 'Dành cho nhà máy chế biến thực phẩm',
       tieuDe: 'Chất lượng đồng đều<br><em>giữa mọi lô sản xuất</em>',
-      moTa: 'Cấp đông sâu siêu tốc ngay sau chế biến: buồng đến <b>−65°C</b>, hạ tâm tới <b>−40°C</b>. Giảm chênh lệch giữa các mẻ, giảm phản ánh chất lượng sau rã đông, chủ động kế hoạch sản xuất không phụ thuộc mùa vụ.',
+      moTa: 'Cấp đông sâu siêu tốc ngay sau chế biến: buồng đến <b>−65°C</b>, hạ tâm tới <b>−40°C</b> chỉ trong khoảng 1 giờ. Giảm chênh lệch giữa các mẻ, giảm phản ánh chất lượng sau rã đông, chủ động kế hoạch sản xuất không phụ thuộc mùa vụ.',
       tab: 'nha-may'
     },
     'fnb': {
@@ -205,7 +205,7 @@
     'thuy-san': {
       nhan: 'Dành cho thủy sản, thịt và nông sản giá trị cao',
       tieuDe: 'Giữ trọng lượng,<br><em>giữ phẩm cấp xuất khẩu</em>',
-      moTa: 'Hạ tâm tới <b>−40°C</b> đáp ứng yêu cầu siêu đông cho sashimi và hàng xuất khẩu. Hạn chế dịch chảy khi rã đông đồng nghĩa giữ được khối lượng bán ra, và giữ màu, giữ độ săn chắc.',
+      moTa: 'Hạ tâm tới <b>−40°C</b> chỉ trong khoảng 1 giờ, đáp ứng yêu cầu siêu đông cho sashimi và hàng xuất khẩu. Hạn chế dịch chảy khi rã đông đồng nghĩa giữ được khối lượng bán ra, và giữ màu, giữ độ săn chắc.',
       tab: 'thuy-san'
     },
     'rmk': {
