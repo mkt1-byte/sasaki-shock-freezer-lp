@@ -10,7 +10,7 @@
 | # | Việc | Ai | Xong khi |
 |---|---|---|---|
 | 1 | Deploy Google Apps Script, lấy URL `/exec` | Quỳnh | Dán vào `FORM_ENDPOINT` trong `index.html` |
-| 2 | Cấp GA4 Measurement ID | Thời | Điền `GA4_ID` |
+| ~~2~~ | ~~Cấp GA4 Measurement ID~~ | ~~Thời~~ | ✅ Đã điền `GA4_ID` = `G-6KVE8P2T7B` (4/9) |
 | ~~3~~ | ~~Cấp Facebook Pixel ID~~ | ~~Thời~~ | ✅ Đã điền `FB_PIXEL_ID` = `2474015673094064` (4/9) |
 | 4 | Cấp Google Ads Conversion ID + Label | Thời | Điền `GADS_ID`, `GADS_LABEL` |
 | 5 | Cấp TikTok Pixel ID | Thời | Điền `TIKTOK_ID` |
